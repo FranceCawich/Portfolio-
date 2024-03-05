@@ -3,7 +3,7 @@ const HeaderInfo = ({Icon , title}) => {
         <div className="flex items-center space-x-2">
        {Icon}
    
-        <span className="text-zinc-900  dark:text-zinc-400 capitalize text-base font-semibold">
+        <span className="text-zinc-900  dark:text-zinc-400 capitalize text-sm  md:text-base font-semibold">
           {title}
         </span>
       </div>
