@@ -9,7 +9,7 @@ const data = [
   { id: 8, name: "TypeScript", image: "/skills/typescript.png" },
   { id: 10, name: "react", image: "/skills/react.png" },
  // { id: 11, name: "react native", image: "/skills/react-native.png" },
-  { id: 12, name: "redux", image: "/skills/redux.png" },
+ // { id: 12, name: "redux", image: "/skills/redux.png" },
   { id: 13, name: "next", image: "/skills/next-js.png" },
   //{ id: 14, name: "styled components", image: "/skills/styled.png" },
   //{ id: 15, name: "MUI", image: "/skills/mui.png" },
@@ -36,7 +36,9 @@ const data = [
   { id: 36, name: "Deeplearning", image: "/skills/dp.jpg" },
   { id: 37, name: "Python", image: "/skills/python.png" },
   { id: 38, name: "Mariadb", image: "/skills/mariadb.png" },
-  { id: 36, name: "pythorch", image: "/skills/pythorch.png" },
-  { id: 37, name: "Tensorflow", image: "/skills/Tensorflow.png" }
+  { id: 39, name: "pythorch", image: "/skills/pythorch.png" },
+  { id: 40, name: "Tensorflow", image: "/skills/Tensorflow.png" },
+  { id: 41, name: "Flutter", image: "/skills/flutter.png" },
+  { id: 42, name: "FastApi", image: "/skills/fastApi.png" }
 ];
 export default data;
