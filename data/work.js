@@ -3,7 +3,7 @@ const data = [
  
   {
     id: 1,
-    image: "/work/estm-logo.png",
+    image: "/work/estm.jpg",
     role: "IT Instructor ",
     company: "Escuela Secundaria Tecna Mexico ACE Division",
     type: "Onsite",
@@ -16,7 +16,7 @@ const data = [
     ],
   }, {
     id: 2,
-    image: "/work/QuickStop.png",
+    image: "/work/qs.png",
     company: "Quickstop Finance Center",
     role: "full Stack Developer",
     type: "Onsite",
@@ -26,7 +26,7 @@ const data = [
       { id: 2, name: "express JS", image: "/skills/express.png" },
       { id: 3, name: "mongoDB", image: "/skills/mongodb.png" },
       { id: 4, name: "react JS", image: "/skills/react.png" },
-      { id: 5, name: "Next JS", image: "/skills/next-js.png" },
+      { id: 5, name: "next", image: "/skills/next-js.png" },
       //{ id: 6, name: "redux", image: "/skills/redux.png" },
       { id: 7, name: "tailwind CSS", image: "/skills/tailwind.png" },
       { id: 8, name: "material UI", image: "/skills/mui.png" },
@@ -53,9 +53,10 @@ const data = [
 
   {
     id: 4,
-    image: "/work/freelancer.png",
+    image: "/work/freelans.jpg",
     role: "DataAnalyst",
     type: "online",
+    company: "Self employee",
     date: "5/2021 - 2022",
     skills: [
       { id: 1, name: "Python", image: "/skills/python.png" },
