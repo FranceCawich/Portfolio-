@@ -6,6 +6,7 @@ import {
   FaLinkedin,
   FaTwitter,
   FaDownload,
+  FaWhatsapp ,
   FaMedium,
   FaYoutube,
   FaFacebook,
@@ -63,6 +64,9 @@ const Contacts = () => {
 
             {contact.name === "cv" && (
               <FaDownload size={20} className="text-black dark:text-white" />
+            )}
+   {contact.name === "Whatsapp" && (
+              <FaWhatsapp size={20} className="text-[#128C7E] dark:text-white" />
             )}
 
             <span className=" text-sm md:text-base capitalize text-zinc-700 dark:text-white font-bold">
