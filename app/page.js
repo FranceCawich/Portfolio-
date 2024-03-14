@@ -11,10 +11,9 @@ export default function Home() {
 
         <Contacts />
 
-        <About/>
+        <About />
 
         <Skills />
-        
       </div>
     </main>
   );
