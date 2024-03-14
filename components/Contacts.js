@@ -12,13 +12,14 @@ import {
 } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import { FaXTwitter } from "react-icons/fa6";
+import SectionWrapper from "./SectionWrapper";
 
 
 const Contacts = () => {
   return (
-    <section className="border-t border-zinc-100 dark:border-zinc-800">
+    <SectionWrapper>
       <Heading>Contacts</Heading>
-      <div className="flex flex-wrap items-center gap-5">
+      <div className="flex flex-wrap items-center gap-5 ">
         {data.map((contact) => (
           <Link
             href={contact.link}
@@ -64,13 +65,13 @@ const Contacts = () => {
               <FaDownload size={20} className="text-black dark:text-white" />
             )}
 
-            <span className="text-base capitalize text-zinc-700 dark:text-white font-bold">
+            <span className=" text-sm md:text-base capitalize text-zinc-700 dark:text-white font-bold">
               {contact.label}
             </span>
           </Link>
         ))}
       </div>
-    </section>
+    </SectionWrapper>
   );
 };
 
