@@ -1,0 +1,101 @@
+[33mcommit 68df83ff3fa12a7beedde3bae1e4b8fd533690ac[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/WorkHistory[m[33m, [m[1;32mWorkHistory[m[33m)[m
+Author: FranceCawich <L17390321@chetumal.tecnm.mx>
+Date:   Thu Mar 14 15:40:59 2024 -0600
+
+     adding some style to the work componets
+
+[33mcommit 079d612d139f44834d00647466a87a8048cc0915[m
+Author: FranceCawich <L17390321@chetumal.tecnm.mx>
+Date:   Thu Mar 14 14:15:47 2024 -0600
+
+     adding some static data from my work history
+
+[33mcommit 23a0952a5e574c85ce9cbcd3016d497b8812f9bd[m
+Author: FranceCawich <L17390321@chetumal.tecnm.mx>
+Date:   Thu Mar 14 13:50:28 2024 -0600
+
+    adding whatsapp icon in contacts
+
+[33mcommit 36b76695a9e314c58c342fc65a5135d09e452ed7[m
+Author: FranceCawich <L17390321@chetumal.tecnm.mx>
+Date:   Thu Mar 14 13:28:57 2024 -0600
+
+    adding new skills
+
+[33mcommit 8b34c01c9cb793a53c86db60c931dbd17641ccf2[m[33m ([m[1;31morigin/skills[m[33m, [m[1;32mskills[m[33m)[m
+Author: FranceCawich <L17390321@chetumal.tecnm.mx>
+Date:   Thu Mar 14 13:21:21 2024 -0600
+
+     adding skills componets and some satitc data , images
+
+[33mcommit 73b5f5f1c5d5439ca9b57bc54b2de2a5c1b735a1[m
+Author: FranceCawich <L17390321@chetumal.tecnm.mx>
+Date:   Thu Mar 14 11:53:05 2024 -0600
+
+     adding skills componets, images and static data
+
+[33mcommit ca0521caa86d9f8393c0aa7e878cc8d5b704b326[m
+Author: FranceCawich <L17390321@chetumal.tecnm.mx>
+Date:   Thu Mar 14 11:43:22 2024 -0600
+
+     adding aboutme component and a Section Wrapper componet and some static data for about me
+
+[33mcommit a83f2165b17f20810d3f2508b08cb0fead183de9[m
+Author: FranceCawich <L17390321@chetumal.tecnm.mx>
+Date:   Thu Mar 14 10:57:44 2024 -0600
+
+     changing icons old twitter to new X icon
+
+[33mcommit e89b086f6803ad04f8d2382fd69f745fe0fe4f78[m
+Author: FranceCawich <L17390321@chetumal.tecnm.mx>
+Date:   Thu Mar 14 10:11:55 2024 -0600
+
+     adding contact icons react icons packages
+
+[33mcommit d9264a758e5428a0341011dfd76aae5cf76cc2d5[m
+Author: FranceCawich <L17390321@chetumal.tecnm.mx>
+Date:   Tue Mar 5 14:53:24 2024 -0600
+
+     adding contacts components
+
+[33mcommit c2342c4029554b5fc27f8a55be5e584276a7b273[m
+Author: FranceCawich <L17390321@chetumal.tecnm.mx>
+Date:   Tue Mar 5 14:29:13 2024 -0600
+
+    making header responsive
+
+[33mcommit 428610c406d33b9cc4d55f784d367a697c175005[m[33m ([m[1;31morigin/header[m[33m, [m[1;32mheader[m[33m)[m
+Author: FranceCawich <L17390321@chetumal.tecnm.mx>
+Date:   Tue Mar 5 13:42:33 2024 -0600
+
+     adding headers info componets
+
+[33mcommit 95373408758879e8e946c797d50f4cbb1ce91e27[m
+Author: FranceCawich <L17390321@chetumal.tecnm.mx>
+Date:   Tue Mar 5 11:36:33 2024 -0600
+
+    adding header data
+
+[33mcommit 0bf48258ae0e6dc4e0d2f0d26fd39bdb0fa0a716[m
+Author: FranceCawich <L17390321@chetumal.tecnm.mx>
+Date:   Tue Mar 5 10:46:30 2024 -0600
+
+     removing some pages
+
+[33mcommit 0f335583cc232572dcecffd9f9d4951f43879552[m
+Author: FranceCawich <L17390321@chetumal.tecnm.mx>
+Date:   Mon Mar 4 23:56:46 2024 -0600
+
+     making dark light theme dynamic
+
+[33mcommit 477027bc74a263ea3a03bacf24647b8b9800a12c[m
+Author: FranceCawich <L17390321@chetumal.tecnm.mx>
+Date:   Mon Mar 4 23:29:21 2024 -0600
+
+    adding the darklight theme Switch componet
+
+[33mcommit 1b5fcc0152ce491024f4cbfe0ce9e3e076daa122[m
+Author: FranceCawich <L17390321@chetumal.tecnm.mx>
+Date:   Thu Feb 29 10:36:00 2024 -0600
+
+    Initial commit from Create Next App

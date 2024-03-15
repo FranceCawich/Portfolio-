@@ -39,6 +39,9 @@ const data = [
   { id: 39, name: "pythorch", image: "/skills/pythorch.png" },
   { id: 40, name: "Tensorflow", image: "/skills/Tensorflow.png" },
   { id: 41, name: "Flutter", image: "/skills/flutter.png" },
-  { id: 42, name: "FastApi", image: "/skills/fastApi.png" }
+  { id: 42, name: "FastApi", image: "/skills/fastApi.png" },
+  { id: 43, name: "GoogleColab", image: "/skills/colab.png" },
+  { id: 44, name: "NvidaCuda", image: "/skills/Nvidia_CUDA_Logo.jpg" },
+  { id: 44, name: "kotlin", image: "/skills/k.png" },
 ];
 export default data;
