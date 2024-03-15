@@ -36,7 +36,7 @@ const data = [
 
   {
     id: 3,
-    title: "DeepLearning tutorial using Tesnorflow, Keras and Pythorch ",
+    title: "DeepLearning Tutorial using Tesnorflow, Keras and Pythorch ",
     image: "/projects/DL.png",
     description:
       "create a tutorial on how to use tensorflow, keras and pythorch to create deep learning models. The tutorial was created using jupyter notebook and was uploaded to github. The tutorial was created to help people who are new to deep learning to get started with deep learning. The tutorial was created to be easy to understand and to be able to run on any machine.",
@@ -51,7 +51,7 @@ const data = [
   },
   {
     id: 4,
-    title: "mobile app uising kotlin to generate mexican Curp and Rfc",
+    title: "mobile app uising kotlin to generate mexican CURP and RFC",
     image: "/projects/Kotlin.jpg",
     description:
       "The app was created using Kotlin and Android Studio. The app was created to generate the mexican CURP and RFC. The app was created to be able to run on any android device. The app was created to be easy to use and to be able to generate the curp and rfc in less than 5 seconds.",

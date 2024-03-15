@@ -10,7 +10,7 @@ const About = () => {
         {data.heading} 👋
       </h3>
 
-      <p className="mt-3 text-base md:text-lg  text-black dark:text-zinc-400 justify-center"> {data.bio}</p>
+      <p className="mt-3 text-base md:text-lg  text-black dark:text-zinc-400 justify-center text-justify"> {data.bio}</p>
     </SectionWrapper>
   );
 };
