@@ -11,7 +11,9 @@ const data = [
       { id: 2, name: "GoogleColab", image: "/skills/colab.png" },
       { id: 3, name: "docker", image: "/skills/docker.png" },
       //{ id: 3, name: "node", image: "/skills/node-js.png" },
-      // { id: 3, name: "mongodb", image: "/skills/mongodb.png" },
+     { id: 5, name: "mongodb", image: "/skills/mongodb.png" },
+    { id: 6, name: "NvidaCuda", image: "/skills/Nvidia_CUDA_Logo.jpg"},
+    { id: 7, name: "github", image: "/skills/git.png" },
     ],
     source_code:
       "https://colab.research.google.com/drive/1KyZMR23lGqSzPxomt3te8QafLg8vz8hg",
@@ -45,6 +47,10 @@ const data = [
       { id: 4, name: "Tensorflow", image: "/skills/Tensorflow.png" },
       { id: 2, name: "GoogleColab", image: "/skills/colab.png" },
       { id: 3, name: "docker", image: "/skills/docker.png" },
+
+      { id: 5, name: "Pytorch", image: "/skills/pythorch.png" },
+
+      { id: 6, name: "NvidaCuda", image: "/skills/Nvidia_CUDA_Logo.jpg" },
     ],
     source_code: "https://github.com/FranceCawich/deepLearningTensorflow",
     demo: "http://www.demo.com/mydemo",
@@ -68,9 +74,15 @@ const data = [
       "Create a portfolio website using next.js and tailwindcss. The website was created to be able to run on any device. The website was created to be easy to use and to be able to show my work and skills. The website was created to be able to show my work and to be able to contact me. The website was created to be able to show my work and to be able to contact me.",
     skills: [
       { id: 1, name: "react", image: "/skills/react.png" },
-      { id: 4, name: "next", image: "/skills/next-js.png" },
-      { id: 2, name: "tailwindcss", image: "/skills/tailwind.png" },
-      { id: 3, name: "github", image: "/skills/git.png" },
+      { id: 2, name: "next", image: "/skills/next-js.png" },
+      { id: 3, name: "tailwindcss", image: "/skills/tailwind.png" },
+      { id: 4, name: "github", image: "/skills/git.png" },
+    
+      {id:7, name: "node", image: "/skills/node-js.png" },
+      { id: 6, name: "JavaScript", image: "/skills/javascript.png" },
+      { id: 8, name: "TypeScript", image: "/skills/typescript.png" },
+
+
     ],
     source_code: "https://github.com/FranceCawich/deepLearningTensorflow",
     demo: "http://www.demo.com/mydemo",
