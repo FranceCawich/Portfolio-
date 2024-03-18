@@ -1,4 +1,5 @@
 import Image from "next/image";
+
 import { VscEyeClosed } from "react-icons/vsc";
 import SkillComponent from "./SkillComponent";
 import { TbWorldShare } from "react-icons/tb";

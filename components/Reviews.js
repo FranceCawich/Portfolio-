@@ -1,9 +1,13 @@
+"use client";
 import Heading from "./Heading";
+import Masonry from "react-masonry-css";
 import SectionWrapper from "./SectionWrapper";
 import data from "@/data/reviews";
 import Image from "next/image";
+import { useState } from "react";
 
 const Reviews = () => {
+  const [count, setCount] = useState(6);
   return (
     <SectionWrapper>
       <Heading> Testimonials about Nextjs and Tailwind css</Heading>
@@ -21,39 +25,61 @@ const Reviews = () => {
         shape stories with every creation.
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grids-cols-2 gap-6 ">
-        {data.map((rating) => (
-          <div
-            key={rating.id}
-            className="bg-zinc-50 dark:bg-zinc-900 rounded-lg p-7 border border-zinc-100 dark:border-zinc-800 "
-          >
-            <div className=" flex gap-5 ">
-              <div className="relative w-[56px] h-[56px] rounded-full overflow-hidden">
-                <Image
-                  src={rating.image}
-                  fill
-                  alt="client Image"
-                  className=" w-full h-full object-cover"
-                />
-              </div>
-              <div className="flex-1">
-                <h1 className="font-bold text-lg capitalize text-zinc-900 dark:text-zinc-300 ">
-                  {rating.name}
-                </h1>
-
-                <span className=" block  mt-[1px] text-base text-zinc-500 dark:text-zinc-300 capitalize font-medium leading-[20px]">
-                  {" "}
-                  {rating.company}
-                </span>
-
-              
-              </div>
-            </div>
-            <p className="mt-4 text-base text-zinc-600 dark:text-zinc-400">
-                  {rating.comment}
-                </p>
+      <div className=" relative w-full ">
+        {data.length !== count ? (
+          <div className="absolute bottom-0 w-full h-full bg-gradient-to-t from-white/80 dark:from-black/80 to-transparent flex justify-center items-end">
+            <button
+              className="h-[45px] bg-violet-600 text-white rounded-lg font-medium text-base capitalize px-4 "
+              onClick={() => setCount(count + 6)}
+            >
+              show more
+            </button>
           </div>
-        ))}
+        ) : (
+          ""
+        )}
+
+        <Masonry
+          breakpointCols={{
+            default: 3,
+            1200: 3,
+            1000: 2,
+            700: 1,
+          }}
+          className="my-masonry-grid"
+          columnClassName="my-masonry-grid_column"
+        >
+          {data.slice(0, count).map((rating) => (
+            <div
+              key={rating.id}
+              className="bg-zinc-50 dark:bg-zinc-900 rounded-lg p-7 border border-zinc-100 dark:border-zinc-800 "
+            >
+              <div className=" flex gap-5 ">
+                <div className="relative w-[56px] h-[56px] rounded-full overflow-hidden">
+                  <Image
+                    src={rating.image}
+                    fill
+                    alt="client Image"
+                    className=" w-full h-full object-cover"
+                  />
+                </div>
+                <div className="flex-1">
+                  <h1 className="font-bold text-lg capitalize text-zinc-900 dark:text-zinc-300 ">
+                    {rating.name}
+                  </h1>
+
+                  <span className=" block  mt-[1px] text-base text-zinc-500 dark:text-zinc-300 capitalize font-medium leading-[20px]">
+                    {" "}
+                    {rating.company}
+                  </span>
+                </div>
+              </div>
+              <p className="mt-4 text-base text-zinc-600 dark:text-zinc-400">
+                {rating.comment}
+              </p>
+            </div>
+          ))}
+        </Masonry>
       </div>
     </SectionWrapper>
   );
