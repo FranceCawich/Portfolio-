@@ -11,9 +11,9 @@ const data = [
       { id: 2, name: "GoogleColab", image: "/skills/colab.png" },
       { id: 3, name: "docker", image: "/skills/docker.png" },
       //{ id: 3, name: "node", image: "/skills/node-js.png" },
-     { id: 5, name: "mongodb", image: "/skills/mongodb.png" },
-    { id: 6, name: "NvidaCuda", image: "/skills/Nvidia_CUDA_Logo.jpg"},
-    { id: 7, name: "github", image: "/skills/git.png" },
+      { id: 5, name: "mongodb", image: "/skills/mongodb.png" },
+      { id: 6, name: "NvidaCuda", image: "/skills/Nvidia_CUDA_Logo.jpg" },
+      { id: 7, name: "github", image: "/skills/git.png" },
     ],
     source_code:
       "https://colab.research.google.com/drive/1KyZMR23lGqSzPxomt3te8QafLg8vz8hg",
@@ -21,8 +21,7 @@ const data = [
   },
   {
     id: 2,
-    title:
-      "Machine Learning Models Docker ",
+    title: "Machine Learning Models Docker ",
     image: "/projects/docker.png",
     description:
       "Docker container was created to deploy machine learning models using tensorflow, cuda and cudnn. The container was created to be able to run on any machine without the need to install any dependencies. The container was tested on a windows machine and a linux machine and it was able to run without any issues.",
@@ -61,7 +60,9 @@ const data = [
     image: "/projects/Kot.jpg",
     description:
       "The app was created using Kotlin and Android Studio. The app was created to generate the mexican CURP and RFC. The app was created to be able to run on any android device. The app was created to be easy to use and to be able to generate the curp and rfc in less than 5 seconds.",
-    skills: [{ id: 1, name: "kotlin", image: "/skills/kotlin.jpg" }],
+    skills: [
+      { id: 1, name: "kotlin", image: "/skills/kotlin.jpg" },
+    ],
     source_code: "https://github.com/FranceCawich/kotlin",
     demo: "http://www.demo.com/mydemo",
   },
@@ -77,12 +78,10 @@ const data = [
       { id: 2, name: "next", image: "/skills/next-js.png" },
       { id: 3, name: "tailwindcss", image: "/skills/tailwind.png" },
       { id: 4, name: "github", image: "/skills/git.png" },
-    
-      {id:7, name: "node", image: "/skills/node-js.png" },
+
+      { id: 7, name: "node", image: "/skills/node-js.png" },
       { id: 6, name: "JavaScript", image: "/skills/javascript.png" },
       { id: 8, name: "TypeScript", image: "/skills/typescript.png" },
-
-
     ],
     source_code: "https://github.com/FranceCawich/deepLearningTensorflow",
     demo: "http://www.demo.com/mydemo",
