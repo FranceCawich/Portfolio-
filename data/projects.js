@@ -61,7 +61,7 @@ const data = [
     description:
       "The app was created using Kotlin and Android Studio. The app was created to generate the mexican CURP and RFC. The app was created to be able to run on any android device. The app was created to be easy to use and to be able to generate the curp and rfc in less than 5 seconds.",
     skills: [
-      { id: 1, name: "kotlin", image: "/skills/kotlin.jpg" },
+      { id: 1, name: "kotlin", image: "/skills/k.jpg" },
     ],
     source_code: "https://github.com/FranceCawich/kotlin",
     demo: "http://www.demo.com/mydemo",

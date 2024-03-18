@@ -42,6 +42,6 @@ const data = [
   { id: 42, name: "FastApi", image: "/skills/fastApi.png" },
   { id: 43, name: "GoogleColab", image: "/skills/colab.png" },
   { id: 44, name: "NvidaCuda", image: "/skills/Nvidia_CUDA_Logo.jpg" },
-  { id: 44, name: "kotlin", image: "/skills/k.png" },
+  { id: 45, name: "kotlin", image: "/skills/k.png" },
 ];
 export default data;
