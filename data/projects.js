@@ -58,7 +58,7 @@ const data = [
   {
     id: 4,
     title: "mobile app uising kotlin to generate mexican CURP and RFC",
-    image: "/projects/Kotlin.jpg",
+    image: "/projects/Kot.jpg",
     description:
       "The app was created using Kotlin and Android Studio. The app was created to generate the mexican CURP and RFC. The app was created to be able to run on any android device. The app was created to be easy to use and to be able to generate the curp and rfc in less than 5 seconds.",
     skills: [{ id: 1, name: "kotlin", image: "/skills/kotlin.jpg" }],
