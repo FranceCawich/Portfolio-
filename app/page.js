@@ -6,6 +6,7 @@ import Projects from "@/components/Projects";
 import Reviews from "@/components/Reviews";
 import Skills from "@/components/Skills";
 import WorkHistory from "@/components/WorkHistory";
+import BadgesCertificates from "@/components/BadgesCertificates";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
           <About />
 
           <Skills />
+          <BadgesCertificates />
 
           <WorkHistory />
 

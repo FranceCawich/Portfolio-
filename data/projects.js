@@ -86,5 +86,22 @@ const data = [
     source_code: "https://github.com/FranceCawich/deepLearningTensorflow",
     demo: "http://www.demo.com/mydemo",
   },
+  {
+    id:6,
+    title:" Creating Youtube downloader Backend Usining FAST API",
+    image:"/projects/fast.png",
+    description:
+            "The Main reason for this project is to create a free youtube downloader app that allows user to download video with out anoying ads this is the backedn the front end with new feature are coming soon ",
+
+    skills:[
+      { id: 4, name: "github", image: "/skills/git.png" },
+      { id: 1, name: "python", image: "/skills/python.png" },
+
+    ],
+    source_code:"https://github.com/FranceCawich/YoutubeDownloader_FastAPi_Backend"
+
+
+  },
+
 ];
 export default data;

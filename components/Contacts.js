@@ -12,6 +12,8 @@ import {
   FaFacebook,
 } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
+import { LiaCertificateSolid } from "react-icons/lia";
+
 import { FaXTwitter } from "react-icons/fa6";
 import SectionWrapper from "./SectionWrapper";
 
@@ -67,6 +69,10 @@ const Contacts = () => {
             )}
    {contact.name === "Whatsapp" && (
               <FaWhatsapp size={20} className="text-[#128C7E] dark:text-white" />
+            )}
+
+            {contact.name === "Cerificates" && (
+              <LiaCertificateSolid size={20} className="text-black dark:text-white" />
             )}
 
             <span className=" text-sm md:text-base capitalize text-zinc-700 dark:text-white font-bold">

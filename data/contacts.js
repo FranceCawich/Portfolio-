@@ -55,5 +55,11 @@ const data = [
     label: "Whatsapp",
     link: "https://api.whatsapp.com/send/?phone=%2B5016067821&text&type=phone_number&app_absent=0",
   },
+
+  {id:12,
+    name:"Cerificates",
+    label:"View Cerificates",
+    link:"/files/Certificates.pdf",
+  }
 ];
 export default data;
