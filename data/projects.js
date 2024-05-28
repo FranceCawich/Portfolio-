@@ -98,7 +98,8 @@ const data = [
       { id: 1, name: "python", image: "/skills/python.png" },
 
     ],
-    source_code:"https://github.com/FranceCawich/YoutubeDownloader_FastAPi_Backend"
+    source_code:"https://github.com/FranceCawich/YoutubeDownloader_FastAPi_Backend",
+    demo: "http://www.demo.com/mydemo",
 
 
   },
