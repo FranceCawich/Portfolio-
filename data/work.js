@@ -1,13 +1,33 @@
 const data = [
- 
- 
+
+
   {
     id: 1,
+    image: "/work/smart.jpg",
+    role: "Software Developer ",
+    company: "SpeedNet Commincation LTD",
+    type: "Onsite",
+    date: "06/2024 - Present",
+    skills: [
+      { id: 1, name: "Python", image: "/skills/python.png" },
+      { id: 2, name: "Html", image: "/skills/html-5.png" },
+      { id: 3, name: "Mysql", image: "/skills/mysql.png" },
+      { id: 4, name: "Postgres Sql ", image: "/skills/mysql.png" },
+      { id: 5, name: "C ", image: "/skills/mysql.png" },
+      { id: 6, name: "PHP ", image: "/skills/mysql.png" },
+
+
+
+    ],
+  },
+
+  {
+    id: 2,
     image: "/work/estm.jpg",
     role: "IT Instructor ",
     company: "Escuela Secundaria Tecna Mexico ACE Division",
     type: "Onsite",
-    date: "06/2023 - Present",
+    date: "06/2023 ",
     skills: [
       { id: 1, name: "Python", image: "/skills/python.png" },
       { id: 2, name: "Html", image: "/skills/html-5.png" },
@@ -15,7 +35,7 @@ const data = [
 
     ],
   }, {
-    id: 2,
+    id: 3,
     image: "/work/qs.png",
     company: "Quickstop Finance Center",
     role: "full Stack Developer",
@@ -35,7 +55,7 @@ const data = [
   },
 
   {
-    id: 3,
+    id: 4,
     image: "/work/Itche.png",
     role: "Reasearch and Development Intern",
     company: "Unversity Institute of technology of Chetumal",
@@ -52,7 +72,7 @@ const data = [
   },
 
   {
-    id: 4,
+    id: 5,
     image: "/work/freelans.jpg",
     role: "DataAnalyst",
     type: "online",
