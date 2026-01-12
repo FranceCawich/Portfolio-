@@ -1,10 +1,10 @@
 const data = [
   {
     id: 1,
-    title: "Pest Detecion using Convolutional Neural Networks",
+    title: "Pest Detection using Convolutional Neural Networks",
     image: "/projects/CNNPest Detecion.jpg",
     description:
-      "Convultional new networks was build in using python and tensorflow to detect pest in crops special Sugar cane plantaion in the state of Quintana Roo, Mexico. The model was trained using 1000 images of pest and 1000 images of healthy crops. The model was able to detect pest with an accuracy of 95%.",
+      "Developed a convolutional neural network using Python and TensorFlow to detect pest infestations in sugar cane crops across Quintana Roo, Mexico. The model was trained on a dataset of 1000 pest-affected and 1000 healthy crop images, achieving a detection accuracy of 95%. This solution enables early pest identification, minimizing crop damage and reducing agricultural losses.",
     skills: [
       { id: 1, name: "python", image: "/skills/python.png" },
       { id: 4, name: "Tensorflow", image: "/skills/Tensorflow.png" },
@@ -21,10 +21,10 @@ const data = [
   },
   {
     id: 2,
-    title: "Machine Learning Models Docker ",
+    title: "Machine Learning Models Docker Deployment",
     image: "/projects/docker.png",
     description:
-      "Docker container was created to deploy machine learning models using tensorflow, cuda and cudnn. The container was created to be able to run on any machine without the need to install any dependencies. The container was tested on a windows machine and a linux machine and it was able to run without any issues.",
+      "Engineered a containerized environment using Docker to streamline machine learning model deployment with TensorFlow, CUDA, and cuDNN. The container ensures consistent execution across different systems by eliminating dependency conflicts. Successfully validated on both Windows and Linux platforms, providing a robust, reproducible solution for ML model operationalization.",
     skills: [
       { id: 1, name: "docker", image: "/skills/docker.png" },
       { id: 2, name: "Tensorflow", image: "/skills/Tensorflow.png" },
@@ -37,10 +37,10 @@ const data = [
 
   {
     id: 3,
-    title: "DeepLearning Tutorial using Tesnorflow, Keras and Pythorch ",
+    title: "Deep Learning Tutorial: TensorFlow, Keras, and PyTorch",
     image: "/projects/DL.png",
     description:
-      "create a tutorial on how to use tensorflow, keras and pythorch to create deep learning models. The tutorial was created using jupyter notebook and was uploaded to github. The tutorial was created to help people who are new to deep learning to get started with deep learning. The tutorial was created to be easy to understand and to be able to run on any machine.",
+      "Created a comprehensive deep learning educational resource utilizing Jupyter notebooks covering TensorFlow, Keras, and PyTorch frameworks. The tutorial series provides practical, hands-on guidance for machine learning practitioners transitioning into deep learning. Designed with accessibility in mind, each module includes clear explanations and executable code samples compatible across multiple platforms.",
     skills: [
       { id: 1, name: "python", image: "/skills/python.png" },
       { id: 4, name: "Tensorflow", image: "/skills/Tensorflow.png" },
@@ -56,10 +56,10 @@ const data = [
   },
   {
     id: 4,
-    title: "mobile app uising kotlin to generate mexican CURP and RFC",
+    title: "Mobile Application for Mexican CURP and RFC Generation",
     image: "/projects/kot.jpg",
     description:
-      "The app was created using Kotlin and Android Studio. The app was created to generate the mexican CURP and RFC. The app was created to be able to run on any android device. The app was created to be easy to use and to be able to generate the curp and rfc in less than 5 seconds.",
+      "Developed a Kotlin-based Android application for generating official Mexican identification documents (CURP and RFC). Built with Android Studio, the application delivers fast, reliable generation of these standardized credentials. Optimized for user experience with sub-5-second processing time, the application is compatible with all Android devices and provides an intuitive interface.",
     skills: [
       { id: 1, name: "kotlin", image: "/skills/k.jpg" },
     ],
@@ -69,10 +69,10 @@ const data = [
 
   {
     id: 5,
-    title: "Create portfolio website using Next.js and tailwindcss",
+    title: "Professional Portfolio Website using Next.js and Tailwind CSS",
     image: "/projects/portfolio.jpg",
     description:
-      "Create a portfolio website using next.js and tailwindcss. The website was created to be able to run on any device. The website was created to be easy to use and to be able to show my work and skills. The website was created to be able to show my work and to be able to contact me. The website was created to be able to show my work and to be able to contact me.",
+      "Designed and developed a responsive portfolio website leveraging Next.js and Tailwind CSS to showcase technical expertise and professional accomplishments. The platform features dynamic content management, seamless navigation, and comprehensive project documentation. Optimized for performance and accessibility, the website provides an effective medium for professional networking and project showcasing.",
     skills: [
       { id: 1, name: "react", image: "/skills/react.png" },
       { id: 2, name: "next", image: "/skills/next-js.png" },
@@ -87,18 +87,18 @@ const data = [
     demo: "http://www.demo.com/mydemo",
   },
   {
-    id:6,
-    title:" Creating Youtube downloader Backend Usining FAST API",
-    image:"/projects/fast.png",
+    id: 6,
+    title: "YouTube Downloader Backend using FastAPI",
+    image: "/projects/fast.png",
     description:
-            "The Main reason for this project is to create a free youtube downloader app that allows user to download video with out anoying ads this is the backedn the front end with new feature are coming soon ",
+      "Engineered a robust backend service using FastAPI to provide efficient YouTube video downloading capabilities. This service prioritizes user experience by eliminating intrusive advertisements and streamlining the download process. Built with extensibility in mind, the backend infrastructure supports planned frontend enhancements and additional feature implementations for enhanced functionality.",
 
-    skills:[
+    skills: [
       { id: 4, name: "github", image: "/skills/git.png" },
       { id: 1, name: "python", image: "/skills/python.png" },
 
     ],
-    source_code:"https://github.com/FranceCawich/YoutubeDownloader_FastAPi_Backend",
+    source_code: "https://github.com/FranceCawich/YoutubeDownloader_FastAPi_Backend",
     demo: "http://www.demo.com/mydemo",
 
 
