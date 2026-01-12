@@ -3,7 +3,7 @@ import Contacts from "@/components/Contacts";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Projects from "@/components/Projects";
-import Reviews from "@/components/Reviews";
+
 import Skills from "@/components/Skills";
 import WorkHistory from "@/components/WorkHistory";
 import BadgesCertificates from "@/components/BadgesCertificates";
@@ -11,8 +11,8 @@ import BadgesCertificates from "@/components/BadgesCertificates";
 export default function Home() {
   return (
     <>
-    
-    <main className="max-w-screen-xl w-full mx-auto px-4">
+
+      <main className="max-w-screen-xl w-full mx-auto px-4">
         <div className="mt-20">
           <Header />
 
@@ -26,18 +26,18 @@ export default function Home() {
           <WorkHistory />
 
           <Projects />
-       
-          <Reviews />
-     
+
+
+
 
         </div>
       </main>
       <Footer />
-      
-      </>
+
+    </>
 
 
-   
-  
+
+
   );
 }
