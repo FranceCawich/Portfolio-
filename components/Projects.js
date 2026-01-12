@@ -24,9 +24,9 @@ const Projects = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
           {data.map((project) => (
-            <div
+            <article
               key={project.id}
-              className="group relative flex flex-col bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl overflow-hidden transition-all hover:border-violet-500/50 hover:shadow-lg hover:shadow-violet-500/10 cursor-pointer"
+              className="group relative flex flex-col bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-lg overflow-hidden transition-all hover:border-violet-500/50 hover:shadow-xl hover:shadow-violet-500/10 cursor-pointer"
               onClick={() => {
                 toggleModel();
                 setDetails(project);
@@ -36,33 +36,33 @@ const Projects = () => {
                 <Image
                   src={project.image}
                   fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
                   alt={project.title}
                 />
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
-                  <span className="bg-white/90 dark:bg-zinc-900/90 text-zinc-900 dark:text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">
-                    View Details
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
+                  <span className="bg-white/95 dark:bg-zinc-900/95 text-zinc-900 dark:text-white px-5 py-2 rounded text-sm font-semibold shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+                    View Project
                   </span>
                 </div>
               </div>
 
-              <div className="flex-1 p-5 flex flex-col">
-                <div className="flex justify-between items-start gap-4 mb-3">
-                  <h3 className="text-xl font-bold text-zinc-900 dark:text-zinc-100 leading-tight group-hover:text-violet-600 dark:group-hover:text-violet-400 transition-colors">
+              <div className="flex-1 p-6 flex flex-col">
+                <div className="flex justify-between items-start gap-4 mb-4">
+                  <h3 className="text-lg font-bold text-zinc-900 dark:text-zinc-100 leading-snug group-hover:text-violet-600 dark:group-hover:text-violet-400 transition-colors">
                     {project.title}
                   </h3>
-                  <HiMiniArrowTrendingUp className="text-xl text-zinc-400 group-hover:text-violet-600 transition-colors shrink-0" />
+                  <HiMiniArrowTrendingUp className="text-lg text-zinc-300 group-hover:text-violet-600 transition-colors shrink-0 mt-0.5" />
                 </div>
 
                 <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed line-clamp-3 mb-4 flex-1">
                   {project.description}
                 </p>
 
-                <div className="flex items-center gap-2 text-sm font-semibold text-violet-600 dark:text-violet-400 group-hover:translate-x-1 transition-transform">
-                  Read More <span aria-hidden="true">&rarr;</span>
+                <div className="flex items-center gap-2 text-xs font-semibold text-violet-600 dark:text-violet-400 group-hover:translate-x-1 transition-transform uppercase tracking-wide">
+                  Learn More <span aria-hidden="true">→</span>
                 </div>
               </div>
-            </div>
+            </article>
           ))}
         </div>
       </SectionWrapper>
