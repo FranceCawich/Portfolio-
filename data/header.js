@@ -4,6 +4,17 @@ const data = {
   jobTitle: "full stack Developer & Data Analyst",
   address: "concepcion Village Corozal Town, Belize, Central America",
   experience: "3 + years of experience",
-  education: "Bachelors in Computer Systems Engineering and Mathematic Instituito Tecnologico de Chetumal 2019 - 2022 , Associate Information Technology Centro Escolar de Mexico Jr College  ",
+  education: [
+    {
+      degree: "Bachelors in Computer Systems Engineering and Mathematics",
+      institution: "Instituto Tecnológico de Chetumal",
+      period: "2019 - 2022"
+    },
+    {
+      degree: "Associate in Information Technology",
+      institution: "Centro Escolar de México Jr College",
+      period: ""
+    }
+  ],
 };
 export default data;

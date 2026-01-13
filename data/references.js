@@ -2,10 +2,10 @@ const references = [
     {
         id: 1,
         name: "Carlos Obidio Monterrosa",
-        position: "Senior Software Developer",
-        company: "Prudencial Management Firm",
-        phone: "501-636-2533",
-        email: "cmonterrosa@crncy-group.com"
+        position: "Senior Software Engineer ",
+        company: "logicforge Solutions",
+        phone: "501-6225354",
+        email: "carlosmontess07@gmail.com"
     },
     {
         id: 2,

@@ -38,17 +38,21 @@ const Skills = () => {
               {category.skills.map((skill) => (
                 <div
                   key={skill.id}
-                  className="bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl p-4 flex items-center gap-4 transition-all hover:border-violet-600 dark:hover:border-violet-500 hover:shadow-lg hover:bg-white dark:hover:bg-black group"
+                  className="relative overflow-hidden bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-2xl p-5 flex items-center gap-4 transition-all duration-500 hover:border-violet-500/50 hover:-translate-y-2 group shadow-sm hover:shadow-2xl hover:shadow-violet-500/10"
                 >
-                  <div className="relative w-10 h-10 shrink-0">
+                  {/* Decorative background pulse */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-violet-600/5 to-pink-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
+                  <div className="relative w-12 h-12 shrink-0 z-10 transition-all duration-500 group-hover:scale-110 group-hover:rotate-3">
+                    <div className="absolute inset-0 bg-violet-500/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                     <Image
                       src={skill.image}
                       fill
-                      className="object-contain drop-shadow-md group-hover:scale-110 transition-transform duration-300"
+                      className="object-contain drop-shadow-lg relative z-10"
                       alt={skill.name}
                     />
                   </div>
-                  <span className="font-semibold text-zinc-700 dark:text-zinc-300 group-hover:text-violet-600 dark:group-hover:text-violet-400 capitalize whitespace-nowrap overflow-hidden text-ellipsis">
+                  <span className="relative z-10 font-black text-sm uppercase tracking-widest text-zinc-700 dark:text-zinc-300 group-hover:text-violet-600 dark:group-hover:text-violet-400 transition-colors duration-300">
                     {skill.name}
                   </span>
                 </div>

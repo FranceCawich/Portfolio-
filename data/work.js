@@ -1,6 +1,4 @@
 const data = [
-
-
   {
     id: 1,
     image: "/work/smart.jpg",
@@ -12,15 +10,11 @@ const data = [
       { id: 1, name: "Python", image: "/skills/python.png" },
       { id: 2, name: "Html", image: "/skills/html-5.png" },
       { id: 3, name: "Mysql", image: "/skills/mysql.png" },
-      { id: 4, name: "Postgres Sql ", image: "/skills/mysql.png" },
-      { id: 5, name: "C ", image: "/skills/mysql.png" },
-      { id: 6, name: "PHP ", image: "/skills/mysql.png" },
-
-
-
+      { id: 4, name: "Postgres Sql ", image: "/skills/postgres.png" },
+      { id: 5, name: "C ", image: "/skills/c.png" },
+      { id: 6, name: "PHP ", image: "/skills/php.png" },
     ],
   },
-
   {
     id: 2,
     image: "/work/estm.jpg",
@@ -32,9 +26,9 @@ const data = [
       { id: 1, name: "Python", image: "/skills/python.png" },
       { id: 2, name: "Html", image: "/skills/html-5.png" },
       { id: 3, name: "mariaDb", image: "/skills/mariadb.png" },
-
     ],
-  }, {
+  },
+  {
     id: 3,
     image: "/work/qs.png",
     company: "Quickstop Finance Center",
@@ -47,13 +41,27 @@ const data = [
       { id: 3, name: "mongoDB", image: "/skills/mongodb.png" },
       { id: 4, name: "react JS", image: "/skills/react.png" },
       { id: 5, name: "next", image: "/skills/next-js.png" },
-      //{ id: 6, name: "redux", image: "/skills/redux.png" },
       { id: 7, name: "tailwind CSS", image: "/skills/tailwind.png" },
       { id: 8, name: "material UI", image: "/skills/mui.png" },
       { id: 9, name: "github", image: "/skills/git.png" },
     ],
   },
-
+  {
+    id: 5,
+    image: "/work/freelans.jpg",
+    role: "DataAnalyst",
+    type: "online",
+    company: "Self employee",
+    date: "5/2021 - 2022",
+    skills: [
+      { id: 1, name: "Python", image: "/skills/python.png" },
+      { id: 2, name: "Pytorch", image: "/skills/pythorch.png" },
+      { id: 3, name: "tensorflow", image: "/skills/Tensorflow.png" },
+      { id: 4, name: "DeepLearing", image: "/skills/dp.jpg" },
+      { id: 5, name: "mongoDB", image: "/skills/mongodb.png" },
+      { id: 6, name: "github", image: "/skills/git.png" },
+    ],
+  },
   {
     id: 4,
     image: "/work/Itche.png",
@@ -70,24 +78,5 @@ const data = [
       { id: 6, name: "github", image: "/skills/git.png" },
     ],
   },
-
-  {
-    id: 5,
-    image: "/work/freelans.jpg",
-    role: "DataAnalyst",
-    type: "online",
-    company: "Self employee",
-    date: "5/2021 - 2022",
-    skills: [
-      { id: 1, name: "Python", image: "/skills/python.png" },
-      { id: 2, name: "Pytorch", image: "/skills/pythorch.png" },
-      { id: 3, name: "tensorflow", image: "/skills/Tensorflow.png" },
-      { id: 4, name: "DeepLearing", image: "/skills/dp.jpg" },
-      { id: 5, name: "mongoDB", image: "/skills/mongodb.png" },
-      { id: 6, name: "github", image: "/skills/git.png" },
-    ],
-
-  },
-
 ];
 export default data;
