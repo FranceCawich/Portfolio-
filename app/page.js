@@ -6,6 +6,7 @@ import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import WorkHistory from "@/components/WorkHistory";
 import BadgesCertificates from "@/components/BadgesCertificates";
+import References from "@/components/References";
 
 export default function Home() {
   return (
@@ -37,6 +38,10 @@ export default function Home() {
 
         <section id="projects" className="py-20 border-t border-purple-500/10">
           <Projects />
+        </section>
+
+        <section id="references" className="py-20 border-t border-purple-500/10">
+          <References />
         </section>
       </main>
       <Footer />

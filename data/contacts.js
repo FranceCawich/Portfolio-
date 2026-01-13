@@ -41,7 +41,7 @@ const data = [
     id: 9,
     name: "email",
     label: "email",
-    link: "mailto:cawich.francis@gmail.com",
+    link: "mailto:cawichd.francis@gmail.com",
   },
   {
     id: 10,
@@ -52,14 +52,15 @@ const data = [
   {
     id: 11,
     name: "Whatsapp",
-    label: "Whatsapp",
+    label: "Phone / Whatsapp",
     link: "https://api.whatsapp.com/send/?phone=%2B5016067821&text&type=phone_number&app_absent=0",
   },
 
-  {id:12,
-    name:"Cerificates",
-    label:"View Cerificates",
-    link:"/files/Certificates.pdf",
+  {
+    id: 12,
+    name: "Cerificates",
+    label: "View Cerificates",
+    link: "/files/Certificates.pdf",
   }
 ];
 export default data;

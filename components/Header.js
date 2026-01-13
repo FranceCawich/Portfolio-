@@ -43,9 +43,15 @@ const Header = () => {
             <span className="text-sm font-bold uppercase tracking-wide">{experience}</span>
           </div>
 
-          <div className="flex items-center gap-2 bg-slate-900/50 backdrop-blur px-5 py-2.5 rounded-full border border-purple-500/20 text-slate-300">
-            <IoIosSchool className="text-purple-400" size={20} />
-            <span className="text-sm font-bold uppercase tracking-wide">{education}</span>
+          <div className="flex flex-col gap-3">
+            {education.map((edu, index) => (
+              <div key={index} className="flex items-center gap-2 bg-slate-900/50 backdrop-blur px-5 py-2.5 rounded-full border border-purple-500/20 text-slate-300 w-fit mx-auto md:mx-0">
+                <IoIosSchool className="text-purple-400 shrink-0" size={20} />
+                <span className="text-xs md:text-sm font-bold uppercase tracking-wide">
+                  {edu.degree} {edu.period && `(${edu.period})`} - {edu.institution}
+                </span>
+              </div>
+            ))}
           </div>
         </div>
 

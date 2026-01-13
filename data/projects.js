@@ -61,7 +61,7 @@ const data = [
     description:
       "Developed a Kotlin-based Android application for generating official Mexican identification documents (CURP and RFC). Built with Android Studio, the application delivers fast, reliable generation of these standardized credentials. Optimized for user experience with sub-5-second processing time, the application is compatible with all Android devices and provides an intuitive interface.",
     skills: [
-      { id: 1, name: "kotlin", image: "/skills/k.jpg" },
+      { id: 1, name: "kotlin", image: "/skills/k.png" },
     ],
     source_code: "https://github.com/FranceCawich/kotlin",
     demo: "http://www.demo.com/mydemo",
