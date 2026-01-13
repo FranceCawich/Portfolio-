@@ -1,8 +1,7 @@
-
 import "./globals.css";
-
+import Navbar from "@/components/Navbar";
 import Theme from "@/components/Theme";
-import DarkLight from "@/components/DarkLight";
+
 export const metadata = {
   title: "France Cawich",
   description: "My name is Francis cawich I am a ful stack developer and Data Analyst",
@@ -10,19 +9,13 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-    
-      <body > 
-        
-         <Theme>
-          
-          <DarkLight />
+    <html lang="en" className="scroll-smooth">
+      <body>
+        <Theme>
+          <Navbar />
           {children}
-         
-          </Theme>
+        </Theme>
       </body>
-
-     
     </html>
   );
 }
