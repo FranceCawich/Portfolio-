@@ -5,47 +5,47 @@ import { BsTerminalFill } from "react-icons/bs";
 import { IoIosSchool } from "react-icons/io";
 
 import data from "../data/header";
-import HeaderInfo from "./HeaderInfo";
 import CVDownloadButton from "./CVDownloadButton";
+
 const Header = () => {
   const { image, name, jobTitle, experience, education, address } = data;
   return (
-    <header className="flex flex-col md:flex-row items-center gap-10 pb-10 border-b border-zinc-200 dark:border-zinc-800">
-      <div className="relative w-[180px] h-[180px] md:w-[200px] md:h-[200px] shrink-0">
-        <div className="absolute inset-0 rounded-full border-4 border-violet-100 dark:border-violet-900/30 scale-105"></div>
-        <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-white dark:border-zinc-900 shadow-xl">
+    <header className="flex flex-col md:flex-row items-center gap-12 py-12 border-b border-purple-500/10">
+      <div className="relative w-[200px] h-[200px] md:w-[240px] md:h-[240px] shrink-0">
+        <div className="absolute inset-0 rounded-3xl bg-gradient-to-tr from-purple-600 to-pink-500 rotate-6 opacity-30 blur-2xl"></div>
+        <div className="relative w-full h-full rounded-2xl overflow-hidden border-2 border-white/10 shadow-2xl transition-transform duration-500 hover:scale-[1.02]">
           <Image
             src={image}
             fill
             alt="profile image"
-            className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+            className="w-full h-full object-cover"
           />
         </div>
-        <div className="absolute bottom-2 right-2 w-6 h-6 bg-green-500 border-4 border-white dark:border-zinc-900 rounded-full"></div>
+        <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-green-500 border-4 border-slate-950 rounded-full shadow-lg z-10"></div>
       </div>
 
       <div className="flex-1 text-center md:text-left">
-        <h1 className="text-4xl md:text-6xl font-black capitalize text-zinc-900 dark:text-white tracking-tight mb-2">
-          {name}
+        <h1 className="text-5xl md:text-7xl font-extrabold text-white tracking-tighter mb-4 leading-tight">
+          Francis <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">Cawich</span>
         </h1>
-        <h3 className="text-lg md:text-xl font-bold uppercase tracking-widest text-violet-600 dark:text-violet-400 mb-6">
+        <h3 className="text-xl md:text-2xl font-bold uppercase tracking-[0.2em] text-purple-400 mb-8 opacity-90">
           {jobTitle}
         </h3>
 
-        <div className="flex flex-wrap justify-center md:justify-start gap-4 mb-4">
-          <div className="flex items-center gap-2 bg-zinc-100 dark:bg-zinc-800 px-4 py-2 rounded-full border border-zinc-200 dark:border-zinc-700">
-            <FaMapMarkerAlt className="text-violet-600 dark:text-violet-400" size={16} />
-            <span className="text-sm font-semibold text-zinc-700 dark:text-zinc-300">{address}</span>
+        <div className="flex flex-wrap justify-center md:justify-start gap-3 mb-8">
+          <div className="flex items-center gap-2 bg-slate-900/50 backdrop-blur px-5 py-2.5 rounded-full border border-purple-500/20 text-slate-300">
+            <FaMapMarkerAlt className="text-purple-400" size={18} />
+            <span className="text-sm font-bold uppercase tracking-wide">{address}</span>
           </div>
 
-          <div className="flex items-center gap-2 bg-zinc-100 dark:bg-zinc-800 px-4 py-2 rounded-full border border-zinc-200 dark:border-zinc-700">
-            <BsTerminalFill className="text-violet-600 dark:text-violet-400" size={16} />
-            <span className="text-sm font-semibold text-zinc-700 dark:text-zinc-300">{experience}</span>
+          <div className="flex items-center gap-2 bg-slate-900/50 backdrop-blur px-5 py-2.5 rounded-full border border-purple-500/20 text-slate-300">
+            <BsTerminalFill className="text-purple-400" size={18} />
+            <span className="text-sm font-bold uppercase tracking-wide">{experience}</span>
           </div>
 
-          <div className="flex items-center gap-2 bg-zinc-100 dark:bg-zinc-800 px-4 py-2 rounded-full border border-zinc-200 dark:border-zinc-700">
-            <IoIosSchool className="text-violet-600 dark:text-violet-400" size={18} />
-            <span className="text-sm font-semibold text-zinc-700 dark:text-zinc-300">{education}</span>
+          <div className="flex items-center gap-2 bg-slate-900/50 backdrop-blur px-5 py-2.5 rounded-full border border-purple-500/20 text-slate-300">
+            <IoIosSchool className="text-purple-400" size={20} />
+            <span className="text-sm font-bold uppercase tracking-wide">{education}</span>
           </div>
         </div>
 
@@ -57,3 +57,4 @@ const Header = () => {
   );
 };
 export default Header;
+
