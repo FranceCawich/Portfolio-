@@ -1,6 +1,7 @@
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Theme from "@/components/Theme";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "France Cawich",
@@ -10,10 +11,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body>
+      <body className="bg-slate-950 text-white min-h-screen flex flex-col">
         <Theme>
           <Navbar />
-          {children}
+          <main className="max-w-screen-xl w-full mx-auto px-6 pt-10 flex-grow">
+            {children}
+          </main>
+          <Footer />
         </Theme>
       </body>
     </html>

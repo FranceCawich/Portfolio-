@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { Menu, X, Sun, Moon } from 'lucide-react';
 import { useTheme } from 'next-themes';
 
@@ -9,24 +10,12 @@ const Navbar = () => {
     const { theme, setTheme } = useTheme();
     const [isScrolled, setIsScrolled] = useState(false);
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-    const [activeSection, setActiveSection] = useState('home');
+    const pathname = usePathname();
 
     useEffect(() => {
         setMounted(true);
         const handleScroll = () => {
             setIsScrolled(window.scrollY > 20);
-
-            const sections = ['home', 'about', 'services', 'skills', 'projects', 'references', 'contact'];
-            const current = sections.find(section => {
-                const element = document.getElementById(section);
-                if (element) {
-                    const rect = element.getBoundingClientRect();
-                    return rect.top <= 100 && rect.bottom >= 100;
-                }
-                return false;
-            });
-
-            if (current) setActiveSection(current);
         };
 
         window.addEventListener('scroll', handleScroll);
@@ -34,34 +23,22 @@ const Navbar = () => {
     }, []);
 
     const navItems = [
-        { name: 'Home', href: '#home' },
-        { name: 'About', href: '#about' },
-        { name: 'Work History', href: '#services' },
-        { name: 'Skills', href: '#skills' },
-        { name: 'Project', href: '#projects' },
-        { name: 'Collaborations', href: '#references' },
-        { name: 'contact', href: '#contact' },
+        { name: 'Home', href: '/' },
+        { name: 'About', href: '/about' },
+        { name: 'Work History', href: '/work' },
+        { name: 'Skills', href: '/skills' },
+        { name: 'Project', href: '/projects' },
+        { name: 'Collaborations', href: '/collaborations' },
+        { name: 'Contact', href: '/contact' },
     ];
 
-    const scrollToSection = (href) => {
-        const id = href.replace('#', '');
-        const element = document.getElementById(id);
-        if (element) {
-            const offset = 80;
-            const bodyRect = document.body.getBoundingClientRect().top;
-            const elementRect = element.getBoundingClientRect().top;
-            const elementPosition = elementRect - bodyRect;
-            const offsetPosition = elementPosition - offset;
-
-            window.scrollTo({
-                top: offsetPosition,
-                behavior: 'smooth'
-            });
-            setMobileMenuOpen(false);
-        }
-    };
-
     if (!mounted) return null;
+
+    const isActive = (path) => {
+        if (path === '/' && pathname === '/') return true;
+        if (path !== '/' && pathname.startsWith(path)) return true;
+        return false;
+    };
 
     return (
         <nav
@@ -82,22 +59,22 @@ const Navbar = () => {
                     {/* Desktop Navigation */}
                     <div className="hidden md:flex items-center space-x-10">
                         {navItems.map((item) => (
-                            <button
+                            <Link
                                 key={item.name}
-                                onClick={() => scrollToSection(item.href)}
-                                className={`text-xs font-black uppercase tracking-[0.2em] transition-all duration-300 relative py-2 ${activeSection === item.href.slice(1)
+                                href={item.href}
+                                className={`text-xs font-black uppercase tracking-[0.2em] transition-all duration-300 relative py-2 ${isActive(item.href)
                                     ? 'text-white'
                                     : 'text-slate-400 hover:text-white'
                                     }`}
                             >
                                 {item.name}
                                 <span
-                                    className={`absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-purple-500 to-pink-500 transform origin-left transition-transform duration-500 ${activeSection === item.href.slice(1)
+                                    className={`absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-purple-500 to-pink-500 transform origin-left transition-transform duration-500 ${isActive(item.href)
                                         ? 'scale-x-100'
                                         : 'scale-x-0'
                                         }`}
                                 />
-                            </button>
+                            </Link>
                         ))}
 
                         <button
@@ -129,16 +106,17 @@ const Navbar = () => {
                 {mobileMenuOpen && (
                     <div className="md:hidden py-8 bg-slate-950 border-t border-purple-500/10 animate-slideDown shadow-2xl">
                         {navItems.map((item) => (
-                            <button
+                            <Link
                                 key={item.name}
-                                onClick={() => scrollToSection(item.href)}
-                                className={`block w-full text-center py-5 text-sm font-black uppercase tracking-[0.3em] transition-all ${activeSection === item.href.slice(1)
+                                href={item.href}
+                                onClick={() => setMobileMenuOpen(false)}
+                                className={`block w-full text-center py-5 text-sm font-black uppercase tracking-[0.3em] transition-all ${isActive(item.href)
                                     ? 'text-purple-500 bg-purple-500/5'
                                     : 'text-slate-400 hover:text-white'
                                     }`}
                             >
                                 {item.name}
-                            </button>
+                            </Link>
                         ))}
                     </div>
                 )}

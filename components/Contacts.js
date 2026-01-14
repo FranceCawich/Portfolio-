@@ -10,6 +10,7 @@ import {
   FaMedium,
   FaYoutube,
   FaFacebook,
+  FaEnvelope,
 } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import { LiaCertificateSolid } from "react-icons/lia";
@@ -62,6 +63,10 @@ const Contacts = () => {
 
             {contact.name === "email" && (
               <SiGmail size={20} className="text-red-500 group-hover:text-violet-600 dark:group-hover:text-violet-400 transition-colors" />
+            )}
+
+            {contact.name === "outlook" && (
+              <FaEnvelope size={20} className="text-blue-500 group-hover:text-violet-600 dark:group-hover:text-violet-400 transition-colors" />
             )}
 
             {contact.name === "cv" && (
