@@ -40,8 +40,14 @@ const data = [
   {
     id: 9,
     name: "email",
-    label: "email",
-    link: "mailto:cawichd.francis@gmail.com",
+    label: "cawich.francis@gmail.com",
+    link: "mailto:cawich.francis@gmail.com",
+  },
+  {
+    id: 13,
+    name: "outlook",
+    label: "franol27@outlook.com",
+    link: "mailto:franol27@outlook.com",
   },
   {
     id: 10,
@@ -52,8 +58,8 @@ const data = [
   {
     id: 11,
     name: "Whatsapp",
-    label: "Phone / Whatsapp",
-    link: "https://api.whatsapp.com/send/?phone=%2B5016067821&text&type=phone_number&app_absent=0",
+    label: "+501 673-1342",
+    link: "https://api.whatsapp.com/send/?phone=%2B5016731342&text&type=phone_number&app_absent=0",
   },
 
   {

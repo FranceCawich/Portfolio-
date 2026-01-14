@@ -35,7 +35,7 @@ const data = [
   { id: 35, name: "GitHub", image: "/skills/git.png" },
   { id: 36, name: "Deeplearning", image: "/skills/dp.jpg" },
   { id: 37, name: "Python", image: "/skills/python.png" },
-  { id: 38, name: "Mariadb", image: "/skills/mariadb.png" },
+  { id: 38, name: "Mariadb", image: "/skills/mariadb.jpg" },
   { id: 39, name: "pythorch", image: "/skills/pythorch.png" },
   { id: 40, name: "Tensorflow", image: "/skills/Tensorflow.png" },
   { id: 41, name: "Flutter", image: "/skills/flutter.png" },
