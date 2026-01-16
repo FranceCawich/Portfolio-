@@ -29,6 +29,11 @@ const References = () => {
                                         <Building2 size={16} />
                                         <span>{ref.company}</span>
                                     </div>
+                                    {ref.workDescription && (
+                                        <p className="mt-4 text-zinc-600 dark:text-zinc-400 text-sm leading-relaxed">
+                                            {ref.workDescription}
+                                        </p>
+                                    )}
                                 </div>
 
                                 <div className="mt-auto pt-6 border-t border-zinc-200 dark:border-zinc-800 space-y-3">
@@ -42,15 +47,14 @@ const References = () => {
                                         <span className="text-sm font-medium">{ref.email}</span>
                                     </a>
 
-                                    <a
-                                        href={`tel:${ref.phone}`}
-                                        className="flex items-center gap-3 text-zinc-600 dark:text-zinc-400 hover:text-violet-600 dark:hover:text-violet-400 transition-colors group/link"
-                                    >
-                                        <div className="w-8 h-8 rounded-lg bg-zinc-100 dark:bg-zinc-800 flex items-center justify-center group-hover/link:bg-violet-600/10 transition-colors">
-                                            <Phone size={16} />
-                                        </div>
-                                        <span className="text-sm font-medium">{ref.phone}</span>
-                                    </a>
+                                    {ref.phone && (
+                                        <a
+                                            href={`tel:${ref.phone}`}
+                                            className="flex items-center gap-3 text-zinc-600 dark:text-zinc-400 hover:text-violet-600 dark:hover:text-violet-400 transition-colors group/link pl-1"
+                                        >
+                                            <span className="text-sm font-medium">{ref.phone}</span>
+                                        </a>
+                                    )}
                                 </div>
                             </div>
                         </div>

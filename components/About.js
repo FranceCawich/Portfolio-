@@ -18,7 +18,7 @@ const About = () => {
           </h3>
 
           <div className="prose dark:prose-invert max-w-none">
-            <p className="text-lg leading-relaxed text-zinc-600 dark:text-zinc-400 text-justify">
+            <p className="text-lg leading-loose text-zinc-600 dark:text-zinc-400 text-justify">
               {data.bio}
             </p>
           </div>

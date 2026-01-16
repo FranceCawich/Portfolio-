@@ -321,7 +321,7 @@ const CVDownloadButton = () => {
                 doc.setFont("helvetica", "normal");
                 doc.setFontSize(8.5);
                 doc.setTextColor(100, 100, 100);
-                const descLines = doc.splitTextToSize(project.description, mainWidth);
+                const descLines = doc.splitTextToSize(project.description, mainWidth - 5);
                 doc.text(descLines, contentX, rightY);
                 rightY += (descLines.length * 3.8) + 2;
 
@@ -330,7 +330,7 @@ const CVDownloadButton = () => {
                 doc.setFontSize(8);
                 doc.setTextColor(78, 154, 180);
                 const techList = project.skills.slice(0, 5).map(s => s.name).join(" • ");
-                const techLines = doc.splitTextToSize(`Technologies: ${techList}`, mainWidth);
+                const techLines = doc.splitTextToSize(`Technologies: ${techList}`, mainWidth - 5);
                 doc.text(techLines, contentX, rightY);
                 rightY += (techLines.length * 3.5) + 6;
             });
@@ -399,22 +399,40 @@ const CVDownloadButton = () => {
                 doc.setFontSize(8.5);
                 doc.setTextColor(110, 110, 110);
                 const refInfo = `${ref.company} / ${ref.position}`;
-                const refLines = doc.splitTextToSize(refInfo, mainWidth);
+                const refLines = doc.splitTextToSize(refInfo, mainWidth - 5);
                 doc.text(refLines, xPos, yPos + 6);
 
-                const cont_Y = yPos + 6 + (refLines.length * 4) + 3;
-                doc.setFont("helvetica", "bold");
-                doc.setFontSize(8.5);
-                doc.text("Phone: ", xPos, cont_Y);
-                doc.setFont("helvetica", "normal");
-                doc.text(ref.phone, xPos + 15, cont_Y);
+                let nextY = yPos + 6 + (refLines.length * 4) + 3;
 
-                doc.setFont("helvetica", "bold");
-                doc.text("Email: ", xPos, cont_Y + 5);
-                doc.setFont("helvetica", "normal");
-                doc.text(ref.email, xPos + 15, cont_Y + 5);
+                if (ref.workDescription) {
+                    doc.setFont("helvetica", "normal");
+                    doc.setFontSize(8.5);
+                    doc.setTextColor(100, 100, 100); // Slightly lighter for description
+                    const descLines = doc.splitTextToSize(ref.workDescription, mainWidth - 5);
+                    doc.text(descLines, xPos, nextY);
+                    nextY += (descLines.length * 3.8) + 4;
+                }
 
-                rightY = cont_Y + 12;
+                const cont_Y = nextY;
+                let currentLineY = cont_Y;
+                if (ref.phone) {
+                    doc.setFont("helvetica", "bold");
+                    doc.setFontSize(8.5);
+                    doc.text("Phone: ", xPos, currentLineY);
+                    doc.setFont("helvetica", "normal");
+                    doc.text(ref.phone, xPos + 15, currentLineY);
+                    currentLineY += 5;
+                }
+
+                if (ref.email) {
+                    doc.setFont("helvetica", "bold");
+                    doc.text("Email: ", xPos, currentLineY);
+                    doc.setFont("helvetica", "normal");
+                    doc.text(ref.email, xPos + 15, currentLineY);
+                    currentLineY += 5;
+                }
+
+                rightY = currentLineY + 7;
             });
             currentY = rightY + (Math.ceil(referencesData.length / 2) * 35);
         } else {
