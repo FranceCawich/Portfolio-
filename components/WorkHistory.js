@@ -36,10 +36,10 @@ const WorkHistory = () => {
                   <div className="flex-1">
                     <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2 mb-4">
                       <div>
-                        <h3 className="text-xl font-bold text-zinc-900 dark:text-zinc-100 group-hover:text-violet-600 dark:group-hover:text-violet-400 transition-colors">
+                        <h3 className="text-xl font-extrabold text-zinc-900 dark:text-zinc-100 group-hover:text-violet-600 dark:group-hover:text-violet-400 transition-colors">
                           {work.role}
                         </h3>
-                        <p className="text-base font-semibold text-violet-600 dark:text-violet-400">
+                        <p className="text-base font-bold text-violet-600 dark:text-violet-400">
                           {work.company}
                         </p>
                       </div>

@@ -62,12 +62,12 @@ const Projects = () => {
               {/* Content Area */}
               <div className="flex-1 p-8 flex flex-col">
                 <div className="flex justify-between items-start gap-4 mb-3">
-                  <h3 className="text-xl font-bold text-zinc-900 dark:text-zinc-100 leading-tight group-hover:text-violet-600 dark:group-hover:text-violet-400 transition-colors duration-300">
+                  <h3 className="text-xl font-extrabold text-zinc-900 dark:text-zinc-100 leading-tight group-hover:text-violet-600 dark:group-hover:text-violet-400 transition-colors duration-300">
                     {project.title}
                   </h3>
                 </div>
 
-                <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed line-clamp-2 mb-6 flex-1">
+                <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-loose line-clamp-2 mb-6 flex-1">
                   {project.description}
                 </p>
 
