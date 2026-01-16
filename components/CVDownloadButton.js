@@ -1,7 +1,7 @@
 "use client";
 import jsPDF from "jspdf";
 import { PDFDocument } from "pdf-lib";
-import { FaDownload } from "react-icons/fa";
+import { Download } from "lucide-react";
 import headerData from "@/data/header";
 import aboutData from "@/data/about";
 import workData from "@/data/work";
@@ -11,7 +11,7 @@ import badgesData from "@/data/BadgesCert";
 import referencesData from "@/data/references";
 import projectsData from "@/data/projects";
 
-const CVDownloadButton = () => {
+const CVDownloadButton = ({ className }) => {
     // Helper to get image data url using a very robust multi-method approach
     const getDataUrl = (src) => {
         return new Promise((resolve) => {
@@ -475,10 +475,11 @@ const CVDownloadButton = () => {
     return (
         <button
             onClick={generatePDF}
-            className="flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white px-6 py-2.5 rounded-full font-bold shadow-lg shadow-orange-500/30 transition-all hover:scale-105 active:scale-95"
+            className={`group relative inline-flex items-center gap-2 bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 text-white font-bold py-3 px-8 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-orange-500/50 hover:scale-105 mt-6 ${className || ''}`}
         >
-            <FaDownload />
-            <span>Download Full CV</span>
+            <Download className="w-5 h-5" />
+            Download Full CV
+            <span className="absolute inset-0 rounded-full bg-white/20 scale-0 group-hover:scale-100 transition-transform duration-500"></span>
         </button>
     );
 };
