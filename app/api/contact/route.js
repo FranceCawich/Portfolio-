@@ -111,3 +111,6 @@ export async function POST(request) {
         message:
             type === "booking"
                 ? "Booking confirmed and calendar invite sent."
+                : "Message received successfully.",
+    });
+}
