@@ -20,6 +20,24 @@ You can start editing the page by modifying `app/page.js`. The page auto-updates
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
+## Google Calendar Booking Setup
+
+This portfolio includes a booking form that can create real Google Calendar events and send invites.
+
+1. Copy `.env.local.example` to `.env.local`.
+2. Set `GOOGLE_CLIENT_ID` and `GOOGLE_CLIENT_SECRET` from your Google Cloud credentials.
+3. Run:
+
+```bash
+npm run get-google-refresh-token
+```
+
+4. Open the authorization URL, sign in with your Google account, and complete the authorization flow in your browser.
+5. Copy the generated `refresh_token` into `.env.local` as `GOOGLE_REFRESH_TOKEN`.
+6. Start the app with `npm run dev`.
+
+Make sure your Google Cloud OAuth consent screen is configured and `http://localhost:3000/oauth2callback` is listed as an authorized redirect URI.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
