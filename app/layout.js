@@ -5,12 +5,12 @@ import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "France Cawich",
-  description: "My name is Francis cawich I am a ful stack developer and Data Analyst",
+  description: "My name is Francis Cawich. I am a full-stack developer and Data Analyst.",
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <body className="bg-slate-950 text-white min-h-screen flex flex-col">
         <Theme>
           <Navbar />

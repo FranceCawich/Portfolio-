@@ -1,14 +1,20 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import Image from "next/image";
+import dynamic from 'next/dynamic'; // Imported next/dynamic
 import { Download, MapPin, Briefcase, BookOpen, Code, ChevronDown } from 'lucide-react';
 import headerData from "../data/header";
-import CVDownloadButton from "./CVDownloadButton";
+
+// Dynamically import CVDownloadButton with SSR disabled
+const CVDownloadButton = dynamic(
+  () => import("./CVDownloadButton"),
+  { ssr: false }
+);
 
 const Header = () => {
   const { image, name, jobTitle, address, experience, education } = headerData;
 
-  // Split name for styling (Francis Cawich)
+  // Split name for styling
   const nameParts = name.split(" ");
   const firstName = nameParts[0];
   const lastName = nameParts.slice(1).join(" ");
@@ -86,7 +92,7 @@ const Header = () => {
               })}
             </div>
 
-            {/* CTA Button */}
+            {/* CTA Button - Dynamically Loaded */}
             <CVDownloadButton />
           </div>
         </div>
